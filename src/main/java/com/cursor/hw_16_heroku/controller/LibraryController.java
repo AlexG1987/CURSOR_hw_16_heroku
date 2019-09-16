@@ -36,20 +36,14 @@ public class LibraryController {
     }
 
     @GetMapping("/sortedBooksByAuthor/{id}")
-    public ResponseEntity<List<Book>> sortedBooksByAuthor(@PathVariable("id") long id) {
-        LibraryServiceImpl.getBooksByAuthor(id);
-        return ResponseEntity
-                .status(HttpStatus.OK)
-                .build();
+    public List<Book> sortedBooksByAuthor(@PathVariable("id") long id) {
+        return LibraryServiceImpl.getBooksByAuthor(id);
     }
 
     @ResponseBody
     @GetMapping("/sortedBooksByGenre/{genre}")
-    public ResponseEntity<List<Book>> sortedBooksByGenre(@PathVariable("genre") String genre) {
-        LibraryServiceImpl.getBooksByGenre(genre);
-        return ResponseEntity
-                .status(HttpStatus.OK)
-                .build();
+    public List<Book> sortedBooksByGenre(@PathVariable("genre") String genre) {
+        return LibraryServiceImpl.getBooksByGenre(genre);
     }
 
     @DeleteMapping("/deleteAuthor/{id}")
