@@ -1,5 +1,4 @@
-FROM adoptopenjdk/openjdk11:alpine-jre
-WORKDIR /home/hw16
-ADD target/hw_16_heroku-0.0.1-SNAPSHOT.jar hw16.jar
+FROM openjdk:8
+ADD target/hw_16_heroku-0.0.1-SNAPSHOT.jar hw_16_heroku-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
-CMD java -jar hw16.jar
+ENTRYPOINT ["java", "-jar", "hw_16_heroku-0.0.1-SNAPSHOT.jar"]
