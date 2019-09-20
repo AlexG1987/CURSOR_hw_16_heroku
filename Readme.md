@@ -24,8 +24,8 @@ Params:
 
 Author
 {
-"fName":"Robert",
-"lName":"Martin",
+"firstName":"Robert",
+"lastName":"Martin",
 "books":[{"title":"Clean Code", "genre":"Programming", "description":"Book about goog coding style", "rate":10}]
 }
 
