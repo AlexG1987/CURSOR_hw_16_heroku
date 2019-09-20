@@ -1,6 +1,6 @@
 Useles info to project
 
-App lint - https://boiling-tor-14805.herokuapp.com/ (paste it to your HTTP-client)
+App lint - https://serene-beach-76506.herokuapp.com/ (paste it to your HTTP-client)
 
 Methods:
 
@@ -24,15 +24,15 @@ Params:
 
 Author
 {
-"fName":"",
-"lName":"",
-"books":[{"title":"", "genre":"", "description":"", "rate":,}],
+"fName":"Robert",
+"lName":"Martin",
+"books":[{"title":"Clean Code", "genre":"Programming", "description":"Book about goog coding style", "rate":10}]
 }
 
 Book
 {
-"title":"",
-"genre":"",
-"description":"",
-"rate":,
+"title":"Clean Code",
+"genre":"Programming",
+"description":"Book about goog coding style",
+"rate":10
 }

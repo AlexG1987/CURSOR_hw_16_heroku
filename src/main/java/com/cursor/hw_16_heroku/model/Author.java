@@ -22,13 +22,18 @@ public class Author {
     @Column(name = "id")
     private long id;
 
-    @Column(name = "f_Name", nullable = false, unique = true, length = 100)
-    private String fName;
+    @Column(name = "first_name", nullable = false, unique = true, length = 100)
+    private String firstName;
 
-    @Column(name = "l_Name", nullable = false, unique = true, length = 100)
-    private String lName;
+    @Column(name = "last_name", nullable = false, unique = true, length = 100)
+    private String lastName;
 
     @OneToMany(mappedBy = "author", cascade = CascadeType.ALL)
     private List<Book> books = new ArrayList<>();
+
+    public void addBook(Book book) {
+        this.books.add(book);
+        book.setAuthor(this);
+    }
 
 }

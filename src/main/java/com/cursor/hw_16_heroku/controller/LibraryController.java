@@ -35,11 +35,6 @@ public class LibraryController {
                 .build();
     }
 
-    @GetMapping("/sortedBooksByAuthor/{id}")
-    public List<Book> sortedBooksByAuthor(@PathVariable("id") long id) {
-        return LibraryServiceImpl.getBooksByAuthor(id);
-    }
-
     @ResponseBody
     @GetMapping("/sortedBooksByGenre/{genre}")
     public List<Book> sortedBooksByGenre(@PathVariable("genre") String genre) {
