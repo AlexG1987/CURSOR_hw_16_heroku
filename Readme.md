@@ -4,21 +4,19 @@ App lint - https://serene-beach-76506.herokuapp.com/ (paste it to your HTTP-clie
 
 Methods:
 
-POST
-/addAuthor
-/addBook
+/book
 
-GET
-/sortedBooksByAuthor/{id}
-/sortedBooksByGenre/{genre}
+/ POST - add book
+/{id} PATCH - update book by id
+/{id} DELETE - delete book by id
+/{genre} GET - get list of books by genre
+/{author} GET - get list of books by author
 
-DELETE
-/deleteAuthor/{id}
-/deleteBook/{id}
+/author
 
-PATCH
-/updateAuthor/{id}
-/updateBook/{id}
+/ POST - add author
+/{id} PATCH - update author by id
+/{id} DELETE - delete author by id
 
 Params:
 
